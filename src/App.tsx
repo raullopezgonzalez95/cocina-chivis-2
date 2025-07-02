@@ -71,13 +71,13 @@ const initialMenuItems: MenuItem[] = [
 ];
 
 const App: React.FC = () => {
-    const [menuItems, setMenuItems] = useState<MenuItem[]>(initialMenuItems);
+    const [menuItems] = useState<MenuItem[]>(initialMenuItems);
 
 
     return (
         <div className="app">
             <header className="app-header">
-                <h1>Menú del Restaurante</h1>
+                <h1>Menú</h1>
             </header>
 
             <main>
