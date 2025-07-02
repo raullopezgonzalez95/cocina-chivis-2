@@ -12,7 +12,7 @@ const MenuItemComponent: React.FC<MenuItemProps> = ({ item }) => {
                 {item.image && <img src={item.image} alt={item.name} />}
             </div>
             <div className="item-details">
-                <h3>{item.name}</h3>
+                <h3><strong>{item.name}</strong></h3>
                 <p>{item.description}</p>
 
                 {item.options && item.options.length > 0 && (

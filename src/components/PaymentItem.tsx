@@ -8,12 +8,8 @@ const PaymentItem = () => {
 
     return (
         <div className="max-w-md mx-auto bg-white rounded-2xl shadow-md p-6 mb-6">
-            <br/>
-            <br/>
             <hr/>
-            <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-800">Se acepta pago por transferencia 💳</h2>
-            <br/>
             <div className="mb-3">
                 <p className="text-gray-600"><span className="font-semibold"><strong>Beneficiario:</strong></span> Silvia González Morales</p>
                 <p className="text-gray-600"><span className="font-semibold"><strong>Banco:</strong></span> Banorte</p>

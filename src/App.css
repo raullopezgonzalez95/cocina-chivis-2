@@ -22,6 +22,12 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+}
+
 .user-controls {
   display: flex;
   gap: 10px;
