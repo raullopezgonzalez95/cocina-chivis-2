@@ -28,7 +28,13 @@ const MenuItemComponent: React.FC<MenuItemProps> = ({ item }) => {
                 )}
 
                 <span className="price">${item.price.toFixed(2)}</span>
-                <span className="category">{item.category}</span>
+                {Array.isArray(item.category) ? (
+                    item.category.map((cat, idx) => (
+                        <span style={{marginRight: '10px'}} key={idx} className="category">{cat}</span>
+                    ))
+                ) : (
+                    <span className="category">{item.category}</span>
+                )}
             </div>
         </div>
     );

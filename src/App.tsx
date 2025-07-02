@@ -11,7 +11,7 @@ const initialMenuItems: MenuItem[] = [
         description: 'Café, frijoles y huevos al gusto (2 huevos)',
         options: ['Jamón', 'Chorizo', 'Omelette', 'Salchichas'],
         price: 30,
-        category: 'Desayunos',
+        category: ['Desayunos'],
         image: ''
     },
     {
@@ -20,7 +20,7 @@ const initialMenuItems: MenuItem[] = [
         description: 'Medio litro',
         options: ['Chocolate', 'Plátano', 'Manzana', 'Avena'],
         price: 30,
-        category: 'Desayunos',
+        category: ['Desayunos'],
         image: ''
     },
     {
@@ -29,7 +29,7 @@ const initialMenuItems: MenuItem[] = [
         description: '',
         options: ['Huevo con chorizo', 'Huevo con jamón', 'Salchichas'],
         price: 30,
-        category: 'Desayunos',
+        category: ['Desayunos'],
         image: ''
     },
     {
@@ -38,7 +38,7 @@ const initialMenuItems: MenuItem[] = [
         description: '',
         options: ['Pollo', 'Cerdo'],
         price: 35,
-        category: 'Desayunos',
+        category: ['Desayunos'],
         image: ''
     },
     {
@@ -47,16 +47,25 @@ const initialMenuItems: MenuItem[] = [
         description: 'Jamón y queso',
         options: [],
         price: 30,
-        category: 'Desayunos',
+        category: ['Desayunos'],
         image: ''
     },
     {
         id: 6,
+        name: 'Chilaquiles',
+        description: 'Verdes o rojos',
+        options: ['Con huevo', 'Con pollo'],
+        price: 30,
+        category: ['Desayunos'],
+        image: ''
+    },
+    {
+        id: 7,
         name: 'Orden de hotdogs (2)',
         description: '',
         options: [],
         price: 30,
-        category: 'Desayunos',
+        category: ['Desayunos', 'Comidas'],
         image: ''
     },
     {
@@ -65,7 +74,7 @@ const initialMenuItems: MenuItem[] = [
         description: '',
         options: ['🍚 Arroz', '🥣 Sopa aguada', '🍲 1 Guisado a elegir (se ofrecen 2 guisados distintos cada día)', '🫗 1 vaso de agua de sabor del día (medio litro)', '🌮 Tortillas'],
         price: 35,
-        category: 'Comidas',
+        category: ['Comidas'],
         image: ''
     }
 ];

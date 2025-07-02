@@ -9,12 +9,21 @@ interface MenuListProps {
 const MenuList: React.FC<MenuListProps> = ({items}) => {
     const [filter, setFilter] = useState<string>('Todos');
 
-    // @ts-ignore
-    const categories = ['Todos', ...new Set(items.map(item => item.category))];
+    // Flatten all categories into a single array of strings
+    const categories = [
+        'Todos',
+        ...Array.from(
+            new Set(
+                items.flatMap(item =>
+                    Array.isArray(item.category) ? item.category : [item.category]
+                )
+            )
+        ),
+    ];
 
     const filteredItems = filter === 'Todos'
         ? items
-        : items.filter(item => item.category === filter);
+        : items.filter(item => Array.isArray(item.category) ? item.category.includes(filter) : item.category === filter);
 
     return (
         <div className="menu-list">
