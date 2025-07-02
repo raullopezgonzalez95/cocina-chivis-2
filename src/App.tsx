@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {MenuItem} from './types/types';
 import MenuList from './components/MenuList';
-import PaymentItem from './components/ paymentItem';
+import PaymentItem from './components/PaymentItem';
 import './App.css';
 
 const initialMenuItems: MenuItem[] = [
@@ -76,8 +76,6 @@ const App: React.FC = () => {
 
     return (
         <div className="app">
-
-
             <header className="app-header">
                 <h1>Menú del Restaurante</h1>
             </header>
