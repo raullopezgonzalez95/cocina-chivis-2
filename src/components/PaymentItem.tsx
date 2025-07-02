@@ -20,7 +20,6 @@ const PaymentItem = () => {
                 <p className="text-gray-600"><span className="font-semibold"><strong>Cuenta clabe:</strong></span> 072650010817772546</p> 
             </div>
             <br/>
-            <br/>
             <button
                 onClick={handleWhatsApp}
                 className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition-colors"
