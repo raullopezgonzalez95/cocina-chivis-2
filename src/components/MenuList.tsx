@@ -4,17 +4,15 @@ import {MenuItem} from '../types/types';
 
 interface MenuListProps {
     items: MenuItem[];
-    onItemEdit: (item: MenuItem) => void;
-    onItemDelete: (id: string) => void;
-    isAdmin: boolean;
 }
 
-const MenuList: React.FC<MenuListProps> = ({items, onItemEdit, onItemDelete, isAdmin}) => {
-    const [filter, setFilter] = useState<string>('all');
+const MenuList: React.FC<MenuListProps> = ({items}) => {
+    const [filter, setFilter] = useState<string>('Todos');
 
     // @ts-ignore
-    const categories = ['all', ...new Set(items.map(item => item.category))];
-    const filteredItems = filter === 'all'
+    const categories = ['Todos', ...new Set(items.map(item => item.category))];
+
+    const filteredItems = filter === 'Todos'
         ? items
         : items.filter(item => item.category === filter);
 
@@ -36,9 +34,6 @@ const MenuList: React.FC<MenuListProps> = ({items, onItemEdit, onItemDelete, isA
                     <MenuItemComponent
                         key={item.id}
                         item={item}
-                        onEdit={onItemEdit}
-                        onDelete={onItemDelete}
-                        isAdmin={isAdmin}
                     />
                 ))}
             </div>

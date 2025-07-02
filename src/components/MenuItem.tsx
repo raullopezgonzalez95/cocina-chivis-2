@@ -3,31 +3,36 @@ import {MenuItem} from '../types/types';
 
 interface MenuItemProps {
     item: MenuItem;
-    onEdit?: (item: MenuItem) => void;
-    onDelete?: (id: string) => void;
-    isAdmin?: boolean;
 }
 
-const MenuItemComponent: React.FC<MenuItemProps> = ({item, onEdit, onDelete, isAdmin}) => {
+const MenuItemComponent: React.FC<MenuItemProps> = ({ item }) => {
     return (
         <div className="menu-item">
             <div className="item-image">
-                {item.image && <img src={item.image} alt={item.name}/>}
+                {item.image && <img src={item.image} alt={item.name} />}
             </div>
             <div className="item-details">
                 <h3>{item.name}</h3>
                 <p>{item.description}</p>
+
+                {item.options && item.options.length > 0 && (
+                    <div className="options-list">
+                        <ul>
+                            {item.options.map((option, index) => (
+                                <li key={index} className="option-item">
+                                    {option}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                )}
+
                 <span className="price">${item.price.toFixed(2)}</span>
                 <span className="category">{item.category}</span>
             </div>
-            {isAdmin && (
-                <div className="item-actions">
-                    <button onClick={() => onEdit && onEdit(item)}>Editar</button>
-                    <button onClick={() => onDelete && onDelete(item.id)}>Eliminar</button>
-                </div>
-            )}
         </div>
     );
 };
+
 
 export default MenuItemComponent;
