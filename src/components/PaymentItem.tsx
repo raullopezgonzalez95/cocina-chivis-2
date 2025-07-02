@@ -13,18 +13,20 @@ const PaymentItem = () => {
             <hr/>
             <br/>
             <h2 className="text-2xl font-bold mb-4 text-gray-800">Se acepta pago por transferencia 💳</h2>
-
+            <br/>
             <div className="mb-3">
-                <p className="text-gray-600"><span className="font-semibold">Banco:</span> Banorte</p>
-                <p className="text-gray-600"><span className="font-semibold">Cuenta CLABE:</span> 072650010817772546</p>
-                <p className="text-gray-600"><span className="font-semibold">Beneficiario:</span> Silvia González Morales</p>
+                <p className="text-gray-600"><span className="font-semibold"><strong>Beneficiario:</strong></span> Silvia González Morales</p>
+                <p className="text-gray-600"><span className="font-semibold"><strong>Banco:</strong></span> Banorte</p>
+                <p className="text-gray-600"><span className="font-semibold"><strong>Cuenta clabe:</strong></span> 072650010817772546</p> 
             </div>
-
+            <br/>
+            <br/>
             <button
                 onClick={handleWhatsApp}
                 className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition-colors"
+                style={{ width: '100%', height: '50px', marginTop: '20px', fontSize: '20px' }}
             >
-                Enviar por WhatsApp
+                WhatsApp
             </button>
         </div>
     );
