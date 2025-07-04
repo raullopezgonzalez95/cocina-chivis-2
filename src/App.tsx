@@ -25,12 +25,6 @@ const App: React.FC = () => {
             <footer id="app-footer">
                 <PaymentItem />
             </footer>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
         </div>
     );
 };
