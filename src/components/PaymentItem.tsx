@@ -18,8 +18,14 @@ const PaymentItem = () => {
             <br/>
             <button
                 onClick={handleWhatsApp}
-                className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition-colors"
-                style={{ width: '100%', height: '50px', marginTop: '20px', fontSize: '20px' }}
+                className="text-white font-semibold py-2 px-4 rounded-xl shadow-md transition-colors"
+                style={{
+                    width: '100%',
+                    height: '50px',
+                    marginTop: '20px',
+                    fontSize: '20px',
+                    backgroundColor: '#25D366'
+                }}
             >
                 WhatsApp
             </button>
