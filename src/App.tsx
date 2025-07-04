@@ -4,6 +4,7 @@ import MenuList from './components/MenuList';
 import PaymentItem from './components/PaymentItem';
 import './App.css';
 import { initialMenuItems } from './components/initialMenuItems';
+import ScrollToFooter from './components/ScrollToFooter';
 
 const App: React.FC = () => {
     const [menuItems] = useState<MenuItem[]>(initialMenuItems);
@@ -18,10 +19,18 @@ const App: React.FC = () => {
             <main>
                 <MenuList items={menuItems} />
             </main>
-
-            <footer>
+            
+            <ScrollToFooter />
+            
+            <footer id="app-footer">
                 <PaymentItem />
             </footer>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     );
 };
