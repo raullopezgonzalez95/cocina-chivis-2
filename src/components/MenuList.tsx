@@ -32,7 +32,7 @@ const MenuList: React.FC<MenuListProps> = ({items}) => {
                 alignItems: 'center',
                 gap: '1rem',
                 marginBottom: '1rem',
-                background: 'linear-gradient(90deg, #ffecd2 0%, #fcb69f 100%)',
+                background: 'linear-gradient(90deg,rgb(244, 170, 146) 100%, #fcb69f 100%)',
                 padding: '1rem 2rem',
                 borderRadius: '1.5rem',
                 boxShadow: '0 4px 24px rgba(252,182,159,0.15)'
@@ -40,20 +40,21 @@ const MenuList: React.FC<MenuListProps> = ({items}) => {
                 <label style={{
                     fontWeight: 700,
                     fontSize: '1rem',
-                    color: '#d35400',
+                    color: 'rgb(255, 255, 255)',
                     letterSpacing: '0.05em'
                 }}>
-                    Filtrar por categoría:
+                    Categoría:
                 </label>
                 <select
                     value={filter}
                     onChange={(e) => setFilter(e.target.value)}
                     style={{
+                        width: '100%',
                         padding: '0.5rem 1.2rem',
                         borderRadius: '1rem',
                         border: 'none',
                         background: '#fff',
-                        color: '#d35400',
+                        color: 'rgb(247, 145, 111)',
                         fontWeight: 600,
                         fontSize: '1rem',
                         boxShadow: '0 2px 8px rgba(211,84,0,0.08)',
