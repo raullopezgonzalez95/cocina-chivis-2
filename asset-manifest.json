@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cocina-chivis-2/static/css/main.3dbf8c5b.css",
-    "main.js": "/cocina-chivis-2/static/js/main.291b107f.js",
+    "main.js": "/cocina-chivis-2/static/js/main.78a2ae18.js",
     "static/js/453.8a69e037.chunk.js": "/cocina-chivis-2/static/js/453.8a69e037.chunk.js",
     "index.html": "/cocina-chivis-2/index.html",
     "main.3dbf8c5b.css.map": "/cocina-chivis-2/static/css/main.3dbf8c5b.css.map",
-    "main.291b107f.js.map": "/cocina-chivis-2/static/js/main.291b107f.js.map",
+    "main.78a2ae18.js.map": "/cocina-chivis-2/static/js/main.78a2ae18.js.map",
     "453.8a69e037.chunk.js.map": "/cocina-chivis-2/static/js/453.8a69e037.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3dbf8c5b.css",
-    "static/js/main.291b107f.js"
+    "static/js/main.78a2ae18.js"
   ]
 }
