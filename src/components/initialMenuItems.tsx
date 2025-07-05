@@ -1,5 +1,10 @@
 import { MenuItem } from '../types/types';
 
+const tortaSalchicha = require('./img/torta_salchicha.JPEG');
+const tortaMilansesa = require('./img/torta_milanesa.JPEG');
+const chilaquiles = require('./img/chilaquiles.JPEG');
+const hotdogs = require('./img/hotdogs.JPEG');
+
 export const initialMenuItems: MenuItem[] = [
     {
         id: 1,
@@ -26,7 +31,7 @@ export const initialMenuItems: MenuItem[] = [
         options: ['Huevo con chorizo', 'Huevo con jamón', 'Salchichas'],
         price: 30,
         category: ['Desayunos'],
-        image: ''
+        image: tortaSalchicha
     },
     {
         id: 4,
@@ -35,7 +40,7 @@ export const initialMenuItems: MenuItem[] = [
         options: ['Pollo', 'Cerdo'],
         price: 35,
         category: ['Desayunos'],
-        image: ''
+        image: tortaMilansesa
     },
     {
         id: 5,
@@ -53,7 +58,7 @@ export const initialMenuItems: MenuItem[] = [
         options: ['Con huevo', 'Con pollo'],
         price: 30,
         category: ['Desayunos'],
-        image: ''
+        image: chilaquiles
     },
     {
         id: 7,
@@ -62,7 +67,7 @@ export const initialMenuItems: MenuItem[] = [
         options: [],
         price: 30,
         category: ['Desayunos', 'Comidas'],
-        image: ''
+        image: hotdogs
     },
     {
         id: 20,
