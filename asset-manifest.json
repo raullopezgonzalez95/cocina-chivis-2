@@ -1,15 +1,19 @@
 {
   "files": {
     "main.css": "/cocina-chivis-2/static/css/main.3dbf8c5b.css",
-    "main.js": "/cocina-chivis-2/static/js/main.a3a3ae61.js",
+    "main.js": "/cocina-chivis-2/static/js/main.b7978c88.js",
     "static/js/453.8a69e037.chunk.js": "/cocina-chivis-2/static/js/453.8a69e037.chunk.js",
+    "static/media/chilaquiles.JPEG": "/cocina-chivis-2/static/media/chilaquiles.30b707cd46a91f9990cf.JPEG",
+    "static/media/hotdogs.JPEG": "/cocina-chivis-2/static/media/hotdogs.ab3c2aaf55936c9e60b7.JPEG",
+    "static/media/torta_milanesa.JPEG": "/cocina-chivis-2/static/media/torta_milanesa.8b0fcbc8e7c19aa11069.JPEG",
+    "static/media/torta_salchicha.JPEG": "/cocina-chivis-2/static/media/torta_salchicha.9c27d55c3215f6c2f5d8.JPEG",
     "index.html": "/cocina-chivis-2/index.html",
     "main.3dbf8c5b.css.map": "/cocina-chivis-2/static/css/main.3dbf8c5b.css.map",
-    "main.a3a3ae61.js.map": "/cocina-chivis-2/static/js/main.a3a3ae61.js.map",
+    "main.b7978c88.js.map": "/cocina-chivis-2/static/js/main.b7978c88.js.map",
     "453.8a69e037.chunk.js.map": "/cocina-chivis-2/static/js/453.8a69e037.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3dbf8c5b.css",
-    "static/js/main.a3a3ae61.js"
+    "static/js/main.b7978c88.js"
   ]
 }
